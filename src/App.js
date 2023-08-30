@@ -88,16 +88,6 @@ const QtyText = styled(Text)`
   }
 `;
 
-const AppBar = (props) => (
-  <Header
-    background="brand"
-    pad={{ horizontal: "medium", vertical: "small" }}
-    elevation="medium"
-    justify="center"
-    {...props}
-  />
-);
-
 const ProductIcon = (props) => {
   const DynamicProductIcon = Icon[props.icon];
   return (
@@ -247,11 +237,11 @@ const App = () => {
       <ResponsiveContext.Consumer>
         {size => (
         <Page>
-          <AppBar>
+          <Header background="brand" pad={{ horizontal: "medium", vertical: "small" }} elevation="medium" justify="center">
             <Box height="auto" width="xsmall">
               <Image fit="cover" src={logo} />
             </Box>
-          </AppBar>
+          </Header>        
           <PageContent>
               <Heading level={1} textAlign="center" alignSelf="center">
                 Welcome to the Lume Pack Builder
