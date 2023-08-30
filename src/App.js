@@ -239,7 +239,7 @@ const App = () => {
         <Page>
           <Header background="brand" pad={{ horizontal: "medium", vertical: "small" }} elevation="medium" justify="center">
             <Box height="auto" width="xsmall">
-              <Image fit="cover" src={logo} />
+              <Image fit="cover" src={logo} alt="Lume Deodorant"/>
             </Box>
           </Header>        
           <PageContent>
